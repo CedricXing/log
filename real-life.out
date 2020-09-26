@@ -1,0 +1,894 @@
+['foo_130000.ini', 'foo_110000.ini', 'foo_170000.ini', 'foo_160000.ini', 'foo_180000.ini', 'foo_150000.ini', 'foo_100000.ini', 'foo_140000.ini']
+foo_130000.ini
+[3]
+1333
+3:ArduCopter/motors.cpp
+total traces:1333
+positive labels:893
+total traces:1333
+positive labels:326
+ground truth : 1328
+false positive rate1 : 0.600000
+false positive rate2 : 0.400000
+false negative rate1 : 0.329819
+false negative rate2 : 0.756024
+[['ArduCopter/motors.cpp-97']]
+line no ArduCopter/motors.cpp-97 rank #0 sus : 0.500000
+[0]
+
+~~~~~~~~~~~
+line no ArduCopter/motors.cpp-97 rank #0 sus : 0.000000
+[0]
+
+~~~~~~~~~~~
+line no ArduCopter/motors.cpp-97 rank #0 sus : 0.000000
+[0]
+
+~~~~~~~~~~~
+line no ArduCopter/motors.cpp-97 rank #0 sus : 0.500000
+[0]
+
+~~~~~~~~~~~
+line no ArduCopter/motors.cpp-97 rank #0 sus : 0.000000
+[0]
+
+~~~~~~~~~~~
+line no ArduCopter/motors.cpp-97 rank #0 sus : 0.000000
+[0]
+
+~~~~~~~~~~~
+[3]
+1333
+3:ArduCopter/motors.cpp
+total traces:1333
+positive labels:873
+total traces:1333
+positive labels:287
+ground truth : 1328
+false positive rate1 : 0.800000
+false positive rate2 : 0.200000
+false negative rate1 : 0.345633
+false negative rate2 : 0.784639
+[['ArduCopter/motors.cpp-97']]
+line no ArduCopter/motors.cpp-97 rank #0 sus : 0.500000
+[0]
+
+~~~~~~~~~~~
+line no ArduCopter/motors.cpp-97 rank #0 sus : 0.000000
+[0]
+
+~~~~~~~~~~~
+line no ArduCopter/motors.cpp-97 rank #0 sus : 0.000000
+[0]
+
+~~~~~~~~~~~
+line no ArduCopter/motors.cpp-97 rank #0 sus : 0.500000
+[0]
+
+~~~~~~~~~~~
+line no ArduCopter/motors.cpp-97 rank #0 sus : 0.000000
+[0]
+
+~~~~~~~~~~~
+line no ArduCopter/motors.cpp-97 rank #0 sus : 0.000000
+[0]
+
+~~~~~~~~~~~
+[3]
+1334
+3:ArduCopter/motors.cpp
+total traces:1334
+positive labels:865
+total traces:1334
+positive labels:305
+ground truth : 1329
+false positive rate1 : 0.600000
+false positive rate2 : 0.000000
+false negative rate1 : 0.351392
+false negative rate2 : 0.770504
+[['ArduCopter/motors.cpp-97']]
+line no ArduCopter/motors.cpp-97 rank #0 sus : 0.500000
+[0]
+
+~~~~~~~~~~~
+line no ArduCopter/motors.cpp-97 rank #0 sus : 0.000000
+[0]
+
+~~~~~~~~~~~
+line no ArduCopter/motors.cpp-97 rank #0 sus : 0.000000
+[0]
+
+~~~~~~~~~~~
+line no ArduCopter/motors.cpp-97 rank #0 sus : 0.500000
+[0]
+
+~~~~~~~~~~~
+line no ArduCopter/motors.cpp-97 rank #0 sus : 0.000000
+[0]
+
+~~~~~~~~~~~
+line no ArduCopter/motors.cpp-97 rank #0 sus : 0.000000
+[0]
+
+~~~~~~~~~~~
+foo_110000.ini
+[1]
+1333
+1:ArduCopter/mode_auto.cpp
+total traces:1333
+positive labels:1076
+total traces:1333
+positive labels:1333
+ground truth : 100
+false positive rate1 : 0.805353
+false positive rate2 : 1.000000
+false negative rate1 : 0.170000
+false negative rate2 : 0.000000
+no negative labels
+[['ArduCopter/mode_auto.cpp-836', 'ArduCopter/mode_auto.cpp-933']]
+line no ArduCopter/mode_auto.cpp-836 rank #20 sus : 0.000000
+line no ArduCopter/mode_auto.cpp-933 rank #12 sus : 0.000000
+[12]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_auto.cpp-836 rank #12 sus : -0.000000
+line no ArduCopter/mode_auto.cpp-933 rank #4 sus : -0.000000
+[4]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_auto.cpp-836 rank #12 sus : 0.000000
+line no ArduCopter/mode_auto.cpp-933 rank #4 sus : 0.000000
+[4]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_auto.cpp-836 rank #12 sus : -0.000000
+line no ArduCopter/mode_auto.cpp-933 rank #4 sus : -0.000000
+[4]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_auto.cpp-836 rank #12 sus : 0.000000
+line no ArduCopter/mode_auto.cpp-933 rank #4 sus : 0.000000
+[4]
+
+~~~~~~~~~~~
+[1]
+1333
+1:ArduCopter/mode_auto.cpp
+total traces:1333
+positive labels:1153
+total traces:1333
+positive labels:1333
+ground truth : 100
+false positive rate1 : 0.862125
+false positive rate2 : 1.000000
+false negative rate1 : 0.100000
+false negative rate2 : 0.000000
+no negative labels
+[['ArduCopter/mode_auto.cpp-836', 'ArduCopter/mode_auto.cpp-933']]
+line no ArduCopter/mode_auto.cpp-836 rank #20 sus : 0.000000
+line no ArduCopter/mode_auto.cpp-933 rank #12 sus : 0.000000
+[12]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_auto.cpp-836 rank #12 sus : -0.000000
+line no ArduCopter/mode_auto.cpp-933 rank #4 sus : -0.000000
+[4]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_auto.cpp-836 rank #12 sus : 0.000000
+line no ArduCopter/mode_auto.cpp-933 rank #4 sus : 0.000000
+[4]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_auto.cpp-836 rank #12 sus : -0.000000
+line no ArduCopter/mode_auto.cpp-933 rank #4 sus : -0.000000
+[4]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_auto.cpp-836 rank #12 sus : 0.000000
+line no ArduCopter/mode_auto.cpp-933 rank #4 sus : 0.000000
+[4]
+
+~~~~~~~~~~~
+[1]
+1334
+1:ArduCopter/mode_auto.cpp
+total traces:1334
+positive labels:1149
+total traces:1334
+positive labels:1334
+ground truth : 100
+false positive rate1 : 0.863047
+false positive rate2 : 1.000000
+false negative rate1 : 0.160000
+false negative rate2 : 0.000000
+no negative labels
+[['ArduCopter/mode_auto.cpp-836', 'ArduCopter/mode_auto.cpp-933']]
+line no ArduCopter/mode_auto.cpp-836 rank #20 sus : 0.000000
+line no ArduCopter/mode_auto.cpp-933 rank #12 sus : 0.000000
+[12]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_auto.cpp-836 rank #12 sus : -0.000000
+line no ArduCopter/mode_auto.cpp-933 rank #4 sus : -0.000000
+[4]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_auto.cpp-836 rank #12 sus : 0.000000
+line no ArduCopter/mode_auto.cpp-933 rank #4 sus : 0.000000
+[4]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_auto.cpp-836 rank #12 sus : -0.000000
+line no ArduCopter/mode_auto.cpp-933 rank #4 sus : -0.000000
+[4]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_auto.cpp-836 rank #12 sus : 0.000000
+line no ArduCopter/mode_auto.cpp-933 rank #4 sus : 0.000000
+[4]
+
+~~~~~~~~~~~
+foo_170000.ini
+[4]
+1333
+4:libraries/AC_AttitudeControl/AC_AttitudeControl.cpp
+total traces:1333
+positive labels:911
+total traces:1333
+positive labels:295
+ground truth : 1328
+false positive rate1 : 0.800000
+false positive rate2 : 0.600000
+false negative rate1 : 0.317018
+false negative rate2 : 0.780120
+[['libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661']]
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #16 sus : 0.500000
+[16]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #16 sus : 0.500000
+[16]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~
+[4]
+1333
+4:libraries/AC_AttitudeControl/AC_AttitudeControl.cpp
+total traces:1333
+positive labels:903
+total traces:1333
+positive labels:347
+ground truth : 1328
+false positive rate1 : 0.600000
+false positive rate2 : 0.200000
+false negative rate1 : 0.322289
+false negative rate2 : 0.739458
+[['libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661']]
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #16 sus : 0.500000
+[16]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #16 sus : 0.500000
+[16]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~
+[4]
+1334
+4:libraries/AC_AttitudeControl/AC_AttitudeControl.cpp
+total traces:1334
+positive labels:900
+total traces:1334
+positive labels:302
+ground truth : 1329
+false positive rate1 : 0.800000
+false positive rate2 : 0.000000
+false negative rate1 : 0.325809
+false negative rate2 : 0.772761
+[['libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661']]
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #16 sus : 0.500000
+[16]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #16 sus : 0.500000
+[16]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~
+foo_160000.ini
+[7]
+1333
+7:libraries/AC_AttitudeControl/AC_PosControl.cpp
+total traces:1333
+positive labels:890
+total traces:1333
+positive labels:282
+ground truth : 100
+false positive rate1 : 0.665856
+false positive rate2 : 0.215734
+false negative rate1 : 0.310000
+false negative rate2 : 0.840000
+[['libraries/AC_AttitudeControl/AC_PosControl.cpp-287']]
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-287 rank #59 sus : 0.000000
+[59]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-287 rank #46 sus : -0.000000
+[46]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-287 rank #50 sus : 0.000000
+[50]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-287 rank #59 sus : 0.000000
+[59]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-287 rank #48 sus : -0.000000
+[48]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-287 rank #50 sus : 0.000000
+[50]
+
+~~~~~~~~~~~
+[7]
+1333
+7:libraries/AC_AttitudeControl/AC_PosControl.cpp
+total traces:1333
+positive labels:910
+total traces:1333
+positive labels:277
+ground truth : 100
+false positive rate1 : 0.678832
+false positive rate2 : 0.208435
+false negative rate1 : 0.270000
+false negative rate2 : 0.800000
+[['libraries/AC_AttitudeControl/AC_PosControl.cpp-287']]
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-287 rank #59 sus : 0.000000
+[59]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-287 rank #46 sus : -0.000000
+[46]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-287 rank #51 sus : 0.000000
+[51]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-287 rank #59 sus : 0.000000
+[59]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-287 rank #50 sus : -0.000000
+[50]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-287 rank #51 sus : 0.000000
+[51]
+
+~~~~~~~~~~~
+[7]
+1334
+7:libraries/AC_AttitudeControl/AC_PosControl.cpp
+total traces:1334
+positive labels:898
+total traces:1334
+positive labels:335
+ground truth : 100
+false positive rate1 : 0.673420
+false positive rate2 : 0.249595
+false negative rate1 : 0.330000
+false negative rate2 : 0.730000
+[['libraries/AC_AttitudeControl/AC_PosControl.cpp-287']]
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-287 rank #59 sus : 0.000000
+[59]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-287 rank #45 sus : -0.000000
+[45]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-287 rank #50 sus : 0.000000
+[50]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-287 rank #59 sus : 0.000000
+[59]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-287 rank #49 sus : -0.000000
+[49]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-287 rank #50 sus : 0.000000
+[50]
+
+~~~~~~~~~~~
+foo_180000.ini
+[6]
+1333
+6:libraries/AC_AttitudeControl/AC_PosControl.cpp
+total traces:1333
+positive labels:885
+total traces:1333
+positive labels:310
+ground truth : 114
+false positive rate1 : 0.657916
+false positive rate2 : 0.200164
+false negative rate1 : 0.271930
+false negative rate2 : 0.421053
+[['libraries/AC_AttitudeControl/AC_PosControl.cpp-1167']]
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #1 sus : 0.558603
+[1]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #2 sus : 0.001115
+[2]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #4 sus : 0.147037
+[4]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #1 sus : 0.829968
+[1]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #1 sus : 0.072802
+[1]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #1 sus : 0.323416
+[1]
+
+~~~~~~~~~~~
+[6]
+1333
+6:libraries/AC_AttitudeControl/AC_PosControl.cpp
+total traces:1333
+positive labels:935
+total traces:1333
+positive labels:325
+ground truth : 109
+false positive rate1 : 0.704248
+false positive rate2 : 0.205882
+false negative rate1 : 0.330275
+false negative rate2 : 0.330275
+[['libraries/AC_AttitudeControl/AC_PosControl.cpp-1167']]
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #35 sus : 0.450124
+[35]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #69 sus : -0.000846
+[69]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #4 sus : 0.118401
+[4]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #1 sus : 0.870466
+[1]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #1 sus : 0.098381
+[1]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #1 sus : 0.355332
+[1]
+
+~~~~~~~~~~~
+[6]
+1334
+6:libraries/AC_AttitudeControl/AC_PosControl.cpp
+total traces:1334
+positive labels:888
+total traces:1334
+positive labels:312
+ground truth : 105
+false positive rate1 : 0.662327
+false positive rate2 : 0.204231
+false negative rate1 : 0.295238
+false negative rate2 : 0.419048
+[['libraries/AC_AttitudeControl/AC_PosControl.cpp-1167']]
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #2 sus : 0.539578
+[2]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #3 sus : 0.000476
+[3]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #4 sus : 0.137715
+[4]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #1 sus : 0.820060
+[1]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #1 sus : 0.060718
+[1]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #1 sus : 0.301467
+[1]
+
+~~~~~~~~~~~
+foo_150000.ini
+[5]
+1333
+5:libraries/AC_AttitudeControl/AC_AttitudeControl.cpp
+total traces:1333
+positive labels:787
+total traces:1333
+positive labels:315
+ground truth : 1328
+false positive rate1 : 0.600000
+false positive rate2 : 0.400000
+false negative rate1 : 0.409639
+false negative rate2 : 0.764307
+[['libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-954']]
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-954 rank #5 sus : 0.500000
+[5]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-954 rank #14 sus : 0.000000
+[14]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-954 rank #14 sus : 0.000000
+[14]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-954 rank #5 sus : 0.500000
+[5]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-954 rank #14 sus : -0.000000
+[14]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-954 rank #14 sus : 0.000000
+[14]
+
+~~~~~~~~~~~
+[5]
+1333
+5:libraries/AC_AttitudeControl/AC_AttitudeControl.cpp
+total traces:1333
+positive labels:919
+total traces:1333
+positive labels:312
+ground truth : 1328
+false positive rate1 : 0.800000
+false positive rate2 : 0.400000
+false negative rate1 : 0.310994
+false negative rate2 : 0.766566
+[['libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-954']]
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-954 rank #5 sus : 0.500000
+[5]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-954 rank #14 sus : 0.000000
+[14]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-954 rank #14 sus : 0.000000
+[14]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-954 rank #5 sus : 0.500000
+[5]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-954 rank #14 sus : 0.000000
+[14]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-954 rank #14 sus : 0.000000
+[14]
+
+~~~~~~~~~~~
+[5]
+1334
+5:libraries/AC_AttitudeControl/AC_AttitudeControl.cpp
+total traces:1334
+positive labels:862
+total traces:1334
+positive labels:319
+ground truth : 1329
+false positive rate1 : 0.600000
+false positive rate2 : 0.200000
+false negative rate1 : 0.353649
+false negative rate2 : 0.760722
+[['libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-954']]
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-954 rank #5 sus : 0.500000
+[5]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-954 rank #14 sus : 0.000000
+[14]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-954 rank #14 sus : 0.000000
+[14]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-954 rank #5 sus : 0.500000
+[5]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-954 rank #14 sus : -0.000000
+[14]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-954 rank #14 sus : 0.000000
+[14]
+
+~~~~~~~~~~~
+foo_100000.ini
+[0]
+1333
+0:ArduCopter/mode_acro.cpp
+total traces:1333
+positive labels:964
+total traces:1333
+positive labels:1333
+ground truth : 100
+false positive rate1 : 0.721817
+false positive rate2 : 1.000000
+false negative rate1 : 0.260000
+false negative rate2 : 0.000000
+no negative labels
+[['ArduCopter/mode_acro.cpp-147']]
+line no ArduCopter/mode_acro.cpp-147 rank #11 sus : 0.000000
+[11]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_acro.cpp-147 rank #7 sus : -0.000000
+[7]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_acro.cpp-147 rank #8 sus : 0.000000
+[8]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_acro.cpp-147 rank #8 sus : -0.000000
+[8]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_acro.cpp-147 rank #8 sus : 0.000000
+[8]
+
+~~~~~~~~~~~
+[0]
+1333
+0:ArduCopter/mode_acro.cpp
+total traces:1333
+positive labels:970
+total traces:1333
+positive labels:1333
+ground truth : 100
+false positive rate1 : 0.723439
+false positive rate2 : 1.000000
+false negative rate1 : 0.220000
+false negative rate2 : 0.000000
+no negative labels
+[['ArduCopter/mode_acro.cpp-147']]
+line no ArduCopter/mode_acro.cpp-147 rank #11 sus : 0.000000
+[11]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_acro.cpp-147 rank #7 sus : -0.000000
+[7]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_acro.cpp-147 rank #8 sus : 0.000000
+[8]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_acro.cpp-147 rank #8 sus : -0.000000
+[8]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_acro.cpp-147 rank #8 sus : 0.000000
+[8]
+
+~~~~~~~~~~~
+[0]
+1334
+0:ArduCopter/mode_acro.cpp
+total traces:1334
+positive labels:1037
+total traces:1334
+positive labels:1334
+ground truth : 100
+false positive rate1 : 0.781199
+false positive rate2 : 1.000000
+false negative rate1 : 0.270000
+false negative rate2 : 0.000000
+no negative labels
+[['ArduCopter/mode_acro.cpp-147']]
+line no ArduCopter/mode_acro.cpp-147 rank #11 sus : 0.000000
+[11]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_acro.cpp-147 rank #8 sus : -0.000000
+[8]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_acro.cpp-147 rank #8 sus : 0.000000
+[8]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_acro.cpp-147 rank #8 sus : -0.000000
+[8]
+
+~~~~~~~~~~~
+line no ArduCopter/mode_acro.cpp-147 rank #8 sus : 0.000000
+[8]
+
+~~~~~~~~~~~
+foo_140000.ini
+[4]
+1333
+4:libraries/AC_AttitudeControl/AC_AttitudeControl.cpp
+total traces:1333
+positive labels:866
+total traces:1333
+positive labels:310
+ground truth : 1328
+false positive rate1 : 0.400000
+false positive rate2 : 0.400000
+false negative rate1 : 0.349398
+false negative rate2 : 0.768072
+[['libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661']]
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #16 sus : 0.500000
+[16]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #16 sus : 0.500000
+[16]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~
+[4]
+1333
+4:libraries/AC_AttitudeControl/AC_AttitudeControl.cpp
+total traces:1333
+positive labels:850
+total traces:1333
+positive labels:287
+ground truth : 1328
+false positive rate1 : 0.400000
+false positive rate2 : 0.200000
+false negative rate1 : 0.361446
+false negative rate2 : 0.784639
+[['libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661']]
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #16 sus : 0.500000
+[16]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #16 sus : 0.500000
+[16]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~
+[4]
+1334
+4:libraries/AC_AttitudeControl/AC_AttitudeControl.cpp
+total traces:1334
+positive labels:730
+total traces:1334
+positive labels:309
+ground truth : 1329
+false positive rate1 : 0.200000
+false positive rate2 : 0.200000
+false negative rate1 : 0.451467
+false negative rate2 : 0.768247
+[['libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661']]
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #16 sus : 0.500000
+[16]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #16 sus : 0.500000
+[16]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_AttitudeControl.cpp-661 rank #46 sus : 0.000000
+[46]
+
+~~~~~~~~~~~

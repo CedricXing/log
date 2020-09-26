@@ -1,0 +1,1009 @@
+['foo_160000.ini', 'foo_170000.ini', 'foo_140000.ini', 'foo_130000.ini', 'foo_110000.ini', 'foo_180000.ini', 'foo_150000.ini', 'foo_100000.ini', 'foo_120000.ini']
+foo_160000.ini
+[6]
+1333
+6:libraries/AC_AttitudeControl/AC_PosControl.cpp
+total traces:1333
+positive labels:828
+total traces:1333
+positive labels:337
+ground truth : 100
+false positive rate1 : 0.619627
+false positive rate2 : 0.193025
+false negative rate1 : 0.360000
+false negative rate2 : 0.010000
+[['libraries/AC_AttitudeControl/AC_PosControl.cpp-1167']]
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #4 sus : 0.520216
+[4]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #4 sus : 0.000122
+[4]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #4 sus : 0.132194
+[4]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #1 sus : 0.996594
+[1]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #1 sus : 0.233326
+[1]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #1 sus : 0.484208
+[1]
+
+~~~~~~~~~~~
+[6]
+1333
+6:libraries/AC_AttitudeControl/AC_PosControl.cpp
+total traces:1333
+positive labels:782
+total traces:1333
+positive labels:370
+ground truth : 120
+false positive rate1 : 0.586974
+false positive rate2 : 0.206101
+false negative rate1 : 0.416667
+false negative rate2 : 0.000000
+[['libraries/AC_AttitudeControl/AC_PosControl.cpp-1167']]
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #32 sus : 0.496588
+[32]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #65 sus : -0.000004
+[65]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #4 sus : 0.140035
+[4]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #1 sus : 1.000000
+[1]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #69 sus : -0.257481
+[69]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #1 sus : 0.507426
+[1]
+
+~~~~~~~~~~~
+[6]
+1334
+6:libraries/AC_AttitudeControl/AC_PosControl.cpp
+total traces:1334
+positive labels:797
+total traces:1334
+positive labels:358
+ground truth : 129
+false positive rate1 : 0.593361
+false positive rate2 : 0.190041
+false negative rate1 : 0.364341
+false negative rate2 : 0.000000
+[['libraries/AC_AttitudeControl/AC_PosControl.cpp-1167']]
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #2 sus : 0.540341
+[2]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #5 sus : 0.000650
+[5]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #4 sus : 0.155778
+[4]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #1 sus : 1.000000
+[1]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #69 sus : -0.291857
+[69]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1167 rank #1 sus : 0.540238
+[1]
+
+~~~~~~~~~~~
+foo_170000.ini
+[3]
+1333
+3:libraries/AC_AttitudeControl/AC_PosControl.cpp
+total traces:1333
+positive labels:847
+total traces:1333
+positive labels:284
+ground truth : 0
+false positive rate1 : 0.635409
+false positive rate2 : 0.213053
+false negative rate1 : None
+false negative rate2 : None
+[['libraries/AC_AttitudeControl/AC_PosControl.cpp-514']]
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-514 rank #50 sus : 0.000000
+[50]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-514 rank #32 sus : -0.000000
+[32]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-514 rank #37 sus : 0.000000
+[37]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-514 rank #50 sus : 0.000000
+[50]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-514 rank #32 sus : -0.000000
+[32]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-514 rank #37 sus : 0.000000
+[37]
+
+~~~~~~~~~~~
+[3]
+1333
+3:libraries/AC_AttitudeControl/AC_PosControl.cpp
+total traces:1333
+positive labels:864
+total traces:1333
+positive labels:309
+ground truth : 0
+false positive rate1 : 0.648162
+false positive rate2 : 0.231808
+false negative rate1 : None
+false negative rate2 : None
+[['libraries/AC_AttitudeControl/AC_PosControl.cpp-514']]
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-514 rank #50 sus : 0.000000
+[50]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-514 rank #33 sus : -0.000000
+[33]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-514 rank #37 sus : 0.000000
+[37]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-514 rank #50 sus : 0.000000
+[50]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-514 rank #36 sus : -0.000000
+[36]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-514 rank #37 sus : 0.000000
+[37]
+
+~~~~~~~~~~~
+[3]
+1334
+3:libraries/AC_AttitudeControl/AC_PosControl.cpp
+total traces:1334
+positive labels:829
+total traces:1334
+positive labels:308
+ground truth : 0
+false positive rate1 : 0.621439
+false positive rate2 : 0.230885
+false negative rate1 : None
+false negative rate2 : None
+[['libraries/AC_AttitudeControl/AC_PosControl.cpp-514']]
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-514 rank #50 sus : 0.000000
+[50]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-514 rank #30 sus : -0.000000
+[30]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-514 rank #37 sus : 0.000000
+[37]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-514 rank #50 sus : 0.000000
+[50]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-514 rank #36 sus : -0.000000
+[36]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-514 rank #37 sus : 0.000000
+[37]
+
+~~~~~~~~~~~
+foo_140000.ini
+[1]
+1333
+1:libraries/AC_AttitudeControl/AC_PosControl.cpp
+total traces:1333
+positive labels:762
+total traces:1333
+positive labels:328
+ground truth : 272
+false positive rate1 : 0.555137
+false positive rate2 : 0.247879
+false negative rate1 : 0.363971
+false negative rate2 : 0.761029
+[['libraries/AC_AttitudeControl/AC_PosControl.cpp-1118']]
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #0 sus : 0.566998
+[0]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #0 sus : 0.004340
+[0]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #2 sus : 0.230436
+[2]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #35 sus : 0.490351
+[35]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #68 sus : -0.000069
+[68]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #4 sus : 0.168172
+[4]
+
+~~~~~~~~~~~
+[1]
+1333
+1:libraries/AC_AttitudeControl/AC_PosControl.cpp
+total traces:1333
+positive labels:767
+total traces:1333
+positive labels:307
+ground truth : 264
+false positive rate1 : 0.565014
+false positive rate2 : 0.231057
+false negative rate1 : 0.382576
+false negative rate2 : 0.772727
+[['libraries/AC_AttitudeControl/AC_PosControl.cpp-1118']]
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #0 sus : 0.543573
+[0]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #0 sus : 0.001786
+[0]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #2 sus : 0.216543
+[2]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #34 sus : 0.495700
+[34]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #68 sus : -0.000013
+[68]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #4 sus : 0.165421
+[4]
+
+~~~~~~~~~~~
+[1]
+1334
+1:libraries/AC_AttitudeControl/AC_PosControl.cpp
+total traces:1334
+positive labels:774
+total traces:1334
+positive labels:303
+ground truth : 277
+false positive rate1 : 0.567644
+false positive rate2 : 0.226112
+false negative rate1 : 0.371841
+false negative rate2 : 0.768953
+[['libraries/AC_AttitudeControl/AC_PosControl.cpp-1118']]
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #2 sus : 0.550005
+[2]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #0 sus : 0.002474
+[0]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #2 sus : 0.223215
+[2]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #4 sus : 0.505535
+[4]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #5 sus : 0.000023
+[5]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #4 sus : 0.173103
+[4]
+
+~~~~~~~~~~~
+foo_130000.ini
+[14]
+1333
+14:libraries/AC_WPNav/AC_WPNav.cpp
+total traces:1333
+positive labels:765
+total traces:1333
+positive labels:336
+ground truth : 81
+false positive rate1 : 0.579872
+false positive rate2 : 0.222045
+false negative rate1 : 0.518519
+false negative rate2 : 0.283951
+[['libraries/AC_WPNav/AC_WPNav.cpp-381']]
+line no libraries/AC_WPNav/AC_WPNav.cpp-381 rank #36 sus : 0.408091
+[36]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-381 rank #95 sus : -0.002259
+[95]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-381 rank #11 sus : 0.097724
+[11]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-381 rank #0 sus : 0.882112
+[0]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-381 rank #0 sus : 0.073878
+[0]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-381 rank #5 sus : 0.306496
+[5]
+
+~~~~~~~~~~~
+[14]
+1333
+14:libraries/AC_WPNav/AC_WPNav.cpp
+total traces:1333
+positive labels:733
+total traces:1333
+positive labels:322
+ground truth : 95
+false positive rate1 : 0.546850
+false positive rate2 : 0.210016
+false negative rate1 : 0.410526
+false negative rate2 : 0.347368
+[['libraries/AC_WPNav/AC_WPNav.cpp-381']]
+line no libraries/AC_WPNav/AC_WPNav.cpp-381 rank #1 sus : 0.540306
+[1]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-381 rank #1 sus : 0.000486
+[1]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-381 rank #11 sus : 0.138134
+[11]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-381 rank #0 sus : 0.855050
+[0]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-381 rank #0 sus : 0.070777
+[0]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-381 rank #0 sus : 0.309888
+[0]
+
+~~~~~~~~~~~
+[14]
+1334
+14:libraries/AC_WPNav/AC_WPNav.cpp
+total traces:1334
+positive labels:750
+total traces:1334
+positive labels:293
+ground truth : 81
+false positive rate1 : 0.564246
+false positive rate2 : 0.193136
+false negative rate1 : 0.469136
+false negative rate2 : 0.370370
+[['libraries/AC_WPNav/AC_WPNav.cpp-381']]
+line no libraries/AC_WPNav/AC_WPNav.cpp-381 rank #36 sus : 0.468403
+[36]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-381 rank #87 sus : -0.000258
+[87]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-381 rank #11 sus : 0.111354
+[11]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-381 rank #0 sus : 0.857953
+[0]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-381 rank #0 sus : 0.063398
+[0]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-381 rank #5 sus : 0.293052
+[5]
+
+~~~~~~~~~~~
+foo_110000.ini
+[10]
+1333
+10:libraries/AC_WPNav/AC_WPNav.cpp
+total traces:1333
+positive labels:753
+total traces:1333
+positive labels:301
+ground truth : 659
+false positive rate1 : 0.577151
+false positive rate2 : 0.161721
+false negative rate1 : 0.447648
+false negative rate2 : 0.708649
+[['libraries/AC_WPNav/AC_WPNav.cpp-442']]
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #33 sus : 0.487288
+[33]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #93 sus : -0.000625
+[93]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #2 sus : 0.235539
+[2]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #3 sus : 0.584994
+[3]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #3 sus : 0.024027
+[3]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #2 sus : 0.292048
+[2]
+
+~~~~~~~~~~~
+[10]
+1333
+10:libraries/AC_WPNav/AC_WPNav.cpp
+total traces:1333
+positive labels:745
+total traces:1333
+positive labels:301
+ground truth : 669
+false positive rate1 : 0.548193
+false positive rate2 : 0.149096
+false negative rate1 : 0.430493
+false negative rate2 : 0.698057
+[['libraries/AC_WPNav/AC_WPNav.cpp-442']]
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #4 sus : 0.510794
+[4]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #3 sus : 0.000461
+[3]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #2 sus : 0.259109
+[2]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #4 sus : 0.597265
+[4]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #2 sus : 0.033409
+[2]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #3 sus : 0.307241
+[3]
+
+~~~~~~~~~~~
+[10]
+1334
+10:libraries/AC_WPNav/AC_WPNav.cpp
+total traces:1334
+positive labels:763
+total traces:1334
+positive labels:286
+ground truth : 631
+false positive rate1 : 0.580370
+false positive rate2 : 0.157895
+false negative rate1 : 0.437401
+false negative rate2 : 0.722662
+[['libraries/AC_WPNav/AC_WPNav.cpp-442']]
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #32 sus : 0.490463
+[32]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #87 sus : -0.000322
+[87]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #1 sus : 0.238220
+[1]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #4 sus : 0.584419
+[4]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #2 sus : 0.021114
+[2]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #2 sus : 0.284121
+[2]
+
+~~~~~~~~~~~
+foo_180000.ini
+[12]
+1333
+12:libraries/AC_WPNav/AC_WPNav.cpp
+total traces:1333
+positive labels:816
+total traces:1333
+positive labels:304
+ground truth : 996
+false positive rate1 : 0.623145
+false positive rate2 : 0.148368
+false negative rate1 : 0.391566
+false negative rate2 : 0.744980
+[['libraries/AC_WPNav/AC_WPNav.cpp-399']]
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #27 sus : 0.496091
+[27]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #86 sus : -0.000172
+[86]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #6 sus : 0.204523
+[6]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #6 sus : 0.536759
+[6]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #6 sus : 0.012205
+[6]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #6 sus : 0.224971
+[6]
+
+~~~~~~~~~~~
+[12]
+1333
+12:libraries/AC_WPNav/AC_WPNav.cpp
+total traces:1333
+positive labels:829
+total traces:1333
+positive labels:319
+ground truth : 964
+false positive rate1 : 0.617886
+false positive rate2 : 0.146341
+false negative rate1 : 0.376556
+false negative rate2 : 0.725104
+[['libraries/AC_WPNav/AC_WPNav.cpp-399']]
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #1 sus : 0.501637
+[1]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #3 sus : 0.000026
+[3]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #5 sus : 0.219811
+[5]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #7 sus : 0.546502
+[7]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #6 sus : 0.018174
+[6]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #6 sus : 0.246088
+[6]
+
+~~~~~~~~~~~
+[12]
+1334
+12:libraries/AC_WPNav/AC_WPNav.cpp
+total traces:1334
+positive labels:874
+total traces:1334
+positive labels:332
+ground truth : 934
+false positive rate1 : 0.680000
+false positive rate2 : 0.200000
+false negative rate1 : 0.355460
+false negative rate2 : 0.730193
+[['libraries/AC_WPNav/AC_WPNav.cpp-399']]
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #33 sus : 0.488319
+[33]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #92 sus : -0.001168
+[92]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #7 sus : 0.198824
+[7]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #7 sus : 0.527227
+[7]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #6 sus : 0.005473
+[6]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #6 sus : 0.228741
+[6]
+
+~~~~~~~~~~~
+foo_150000.ini
+[10]
+1333
+10:libraries/AC_WPNav/AC_WPNav.cpp
+total traces:1333
+positive labels:764
+total traces:1333
+positive labels:314
+ground truth : 677
+false positive rate1 : 0.564024
+false positive rate2 : 0.147866
+false negative rate1 : 0.418021
+false negative rate2 : 0.679468
+[['libraries/AC_WPNav/AC_WPNav.cpp-442']]
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #4 sus : 0.509053
+[4]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #5 sus : 0.000329
+[5]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #2 sus : 0.256456
+[2]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #3 sus : 0.604883
+[3]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #3 sus : 0.041381
+[3]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #2 sus : 0.321791
+[2]
+
+~~~~~~~~~~~
+[10]
+1333
+10:libraries/AC_WPNav/AC_WPNav.cpp
+total traces:1333
+positive labels:780
+total traces:1333
+positive labels:304
+ground truth : 688
+false positive rate1 : 0.604651
+false positive rate2 : 0.170543
+false negative rate1 : 0.433140
+false negative rate2 : 0.718023
+[['libraries/AC_WPNav/AC_WPNav.cpp-442']]
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #31 sus : 0.481288
+[31]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #91 sus : -0.001469
+[91]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #2 sus : 0.227311
+[2]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #3 sus : 0.570683
+[3]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #2 sus : 0.017616
+[2]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #2 sus : 0.278572
+[2]
+
+~~~~~~~~~~~
+[10]
+1334
+10:libraries/AC_WPNav/AC_WPNav.cpp
+total traces:1334
+positive labels:828
+total traces:1334
+positive labels:334
+ground truth : 675
+false positive rate1 : 0.637329
+false positive rate2 : 0.172989
+false negative rate1 : 0.395556
+false negative rate2 : 0.674074
+[['libraries/AC_WPNav/AC_WPNav.cpp-442']]
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #33 sus : 0.482892
+[33]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #93 sus : -0.001148
+[93]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #3 sus : 0.225878
+[3]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #3 sus : 0.591446
+[3]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #3 sus : 0.031151
+[3]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-442 rank #2 sus : 0.311065
+[2]
+
+~~~~~~~~~~~
+foo_100000.ini
+[12]
+1333
+12:libraries/AC_WPNav/AC_WPNav.cpp
+total traces:1333
+positive labels:761
+total traces:1333
+positive labels:306
+ground truth : 976
+false positive rate1 : 0.546218
+false positive rate2 : 0.151261
+false negative rate1 : 0.420082
+false negative rate2 : 0.741803
+[['libraries/AC_WPNav/AC_WPNav.cpp-399']]
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #0 sus : 0.509235
+[0]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #0 sus : 0.000909
+[0]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #5 sus : 0.235441
+[5]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #6 sus : 0.538784
+[6]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #6 sus : 0.012679
+[6]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #6 sus : 0.230748
+[6]
+
+~~~~~~~~~~~
+[12]
+1333
+12:libraries/AC_WPNav/AC_WPNav.cpp
+total traces:1333
+positive labels:749
+total traces:1333
+positive labels:300
+ground truth : 1000
+false positive rate1 : 0.594595
+false positive rate2 : 0.159159
+false negative rate1 : 0.449000
+false negative rate2 : 0.753000
+[['libraries/AC_WPNav/AC_WPNav.cpp-399']]
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #28 sus : 0.488970
+[28]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #88 sus : -0.001447
+[88]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #7 sus : 0.194902
+[7]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #7 sus : 0.530403
+[7]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #6 sus : 0.008291
+[6]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #6 sus : 0.215289
+[6]
+
+~~~~~~~~~~~
+[12]
+1334
+12:libraries/AC_WPNav/AC_WPNav.cpp
+total traces:1334
+positive labels:735
+total traces:1334
+positive labels:321
+ground truth : 1019
+false positive rate1 : 0.542857
+false positive rate2 : 0.168254
+false negative rate1 : 0.446516
+false negative rate2 : 0.736997
+[['libraries/AC_WPNav/AC_WPNav.cpp-399']]
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #1 sus : 0.502537
+[1]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #1 sus : 0.000082
+[1]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #6 sus : 0.216044
+[6]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #7 sus : 0.529668
+[7]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #6 sus : 0.008862
+[6]
+
+~~~~~~~~~~~
+line no libraries/AC_WPNav/AC_WPNav.cpp-399 rank #6 sus : 0.217338
+[6]
+
+~~~~~~~~~~~
+foo_120000.ini
+[1]
+1333
+1:libraries/AC_AttitudeControl/AC_PosControl.cpp
+total traces:1333
+positive labels:736
+total traces:1333
+positive labels:306
+ground truth : 314
+false positive rate1 : 0.541708
+false positive rate2 : 0.236506
+false negative rate1 : 0.414013
+false negative rate2 : 0.792994
+[['libraries/AC_AttitudeControl/AC_PosControl.cpp-1118']]
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #1 sus : 0.534467
+[1]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #1 sus : 0.001428
+[1]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #2 sus : 0.229169
+[2]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #34 sus : 0.466985
+[34]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #69 sus : -0.000886
+[69]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #4 sus : 0.159476
+[4]
+
+~~~~~~~~~~~
+[1]
+1333
+1:libraries/AC_AttitudeControl/AC_PosControl.cpp
+total traces:1333
+positive labels:724
+total traces:1333
+positive labels:297
+ground truth : 279
+false positive rate1 : 0.528463
+false positive rate2 : 0.226755
+false negative rate1 : 0.401434
+false negative rate2 : 0.792115
+[['libraries/AC_AttitudeControl/AC_PosControl.cpp-1118']]
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #1 sus : 0.556390
+[1]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #0 sus : 0.003278
+[0]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #2 sus : 0.230501
+[2]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #35 sus : 0.477932
+[35]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #69 sus : -0.000340
+[69]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #4 sus : 0.157147
+[4]
+
+~~~~~~~~~~~
+[1]
+1334
+1:libraries/AC_AttitudeControl/AC_PosControl.cpp
+total traces:1334
+positive labels:750
+total traces:1334
+positive labels:323
+ground truth : 278
+false positive rate1 : 0.563447
+false positive rate2 : 0.243371
+false negative rate1 : 0.442446
+false negative rate2 : 0.762590
+[['libraries/AC_AttitudeControl/AC_PosControl.cpp-1118']]
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #30 sus : 0.495267
+[30]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #64 sus : -0.000023
+[64]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #2 sus : 0.199270
+[2]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #35 sus : 0.493528
+[35]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #68 sus : -0.000032
+[68]
+
+~~~~~~~~~~~
+line no libraries/AC_AttitudeControl/AC_PosControl.cpp-1118 rank #4 sus : 0.170318
+[4]
+
+~~~~~~~~~~~
