@@ -6,17 +6,17 @@ u1 = torch.tensor(0.1,requires_grad=True)
 u2 = torch.tensor(0.0,requires_grad=True)
 t = torch.tensor(1.0,requires_grad=True)
 
-angle = torch.tensor(-0.00)
-v = torch.tensor(0.5)
-x = torch.tensor(0.0)
+angle = torch.tensor(0.6)
+v = torch.tensor(0.1)
+x = torch.tensor(2.5)
 y = torch.tensor(10.0)
-x_target = torch.tensor(20.0)
+x_target = torch.tensor(17.5)
 y_target = torch.tensor(10.0)
 
 # x = x + (v + u1*t)*torch.cos(angle+u2*t)*t
 # y = y + (v + u1*t)*torch.sin(angle+u2*t)*t
 # f = open('/Users/cedricxing/Desktop/loss.txt','w')
-learning_step = 0.01
+learning_step = 0.00001
 
 def satisfyConstraints(x,y,u1,u2,t):
     if y > 15 and (x < 5 or x > 15):
@@ -99,7 +99,7 @@ def Turn(x0,y0,v0,angle0,t0,target0):
     learning_step = 0.00001
     u1 = torch.tensor(0.0,requires_grad=True)
     u2 = torch.tensor(-0.45,requires_grad=True)
-    t = torch.tensor(0.5,requires_grad=True)
+    t = torch.tensor(1.0,requires_grad=True)
     x_ = torch.tensor(x0.item())
     y_ = torch.tensor(y0.item())
     v_ = torch.tensor(v0.item())
@@ -113,7 +113,7 @@ def Turn(x0,y0,v0,angle0,t0,target0):
         angle = angle0 + u2 * t
         x = x0 + v0/u2*(torch.sin(angle)-torch.sin(angle0))
         y = y0 + v0/u2*(torch.cos(angle0) - torch.cos(angle))
-        # print("T x: " + str(x))
+        print("T x: " + str(x) + " T y: " + str(y) + " T angle: " + str(angle))
         # print("T y: " + str(y))
         target = (x-x_target)*(x-x_target)+(y-y_target)*(y-y_target)
         target.backward(retain_graph=True)
@@ -134,8 +134,8 @@ def Turn(x0,y0,v0,angle0,t0,target0):
         t_.data = t.data
         u2.data = u2.data - u2.grad * learning_step
         t.data = t.data - t.grad * learning_step
-        if u2.data < -np.pi/3:
-            u2.data = torch.tensor(-np.pi/3)
+        # if u2.data < -np.pi/3:
+        #     u2.data = torch.tensor(-np.pi/3)
         
         u2.grad.data.zero_()
         t.grad.data.zero_()
@@ -159,9 +159,10 @@ def print_info(x,y,v,angle,u1,u2,t):
     print('u2:' + str(u2))
     print('t: ' + str(t))
 
-mode = 'Turn'
+# mode = 'Turn'
+mode = 'Forward'
 flag = True
-f = open('/Users/admin/Desktop/result.txt','w')
+f = open('/home/cedricxing/Desktop/result.txt','w')
 time_start = time.time()
 target = torch.tensor(10000000.0)
 

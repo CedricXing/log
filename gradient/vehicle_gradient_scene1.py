@@ -159,7 +159,7 @@ def print_info(x,y,v,angle,u1,u2,t):
 
 mode = 'Turn'
 flag = True
-f = open('/Users/admin/Desktop/result.txt','w')
+f = open('/home/cedricxing/Desktop/result.txt','w')
 time_start = time.time()
 target = torch.tensor(10000000.0)
 
