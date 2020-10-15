@@ -14,20 +14,23 @@ T3 = torch.tensor(1.0,requires_grad = True)
 t = torch.tensor(1.0,requires_grad = True)
 
 angle = torch.tensor(0.0)
-vx = torch.tensor(0.0)
-vz = torch.tensor(10.0)
+angle_v= torch.tensor(0.1)
+vx = torch.tensor(0.1)
+vz = torch.tensor(0.1)
 x = torch.tensor(0.0)
 z = torch.tensor(0.0)
 x_target = torch.tensor(10.0)
 z_target = torch.tensor(0.0)
 
 def satisfyConstraints(x,z,vx,vz,t):
+    if z < 0:
+        return False
     if x > 5 and x < 5.5 and (z < 5 or z > 7):
         return False
 
     return True
 
-def Rise(x0,z0,vx0,vz0,angle0,t0,target0):
+def Rise(x0,z0,vx0,vz0,angle0,angle_v0,t0,target0):
     T1 = torch.tensor(0.0,requires_grad=True)
     T2 = torch.tensor(M*g,requires_grad=True)
     ## range for T3 [0,2]
@@ -39,6 +42,7 @@ def Rise(x0,z0,vx0,vz0,angle0,t0,target0):
     vx_ = torch.tensor(vx0.item())
     vz_ = torch.tensor(vz0.item())
     angle_ = torch.tensor(angle0.item())
+    angle_v_ = torch.tensor(angle_v0.item())
 
     T1_ = torch.tensor(0.0)
     T2_ = torch.tensor(M*g)
@@ -47,11 +51,12 @@ def Rise(x0,z0,vx0,vz0,angle0,t0,target0):
     pre_value = -1
 
     while True:
-        angle = angle0 + 0.5 * L / I * (T1 - T3) * t * t
-        vx = vx0 + 1/M * (T1 + T2 + T3) * (angle0 * t + 1/6 * L / I * (T1 - T3) * t * t * t)
-        vz = vz0 + 1/M * (T1 + T2 + T3) * (t - (angle0 * angle0 * t + 1/3*angle0*L/I*(T1-T3)*t*t*t+1/20*L*L/I*I*(T1-T3)*(T1-T3)*t*t*t*t*t) / 2) - g * t
-        x = x0 + vx0*t + 1/M * (T1 + T2 + T3) * (0.5 * angle0 * t * t + 1 / 24 * L / I * (T1-T3) *t*t*t*t)
-        z = z0 + vz0*t + 1/M * (T1 + T2 + T3) * (0.5 * t * t - (0.5 * angle0 * angle0 * t * t + 1/12 * angle0 * L/I * (T1-T3)*t*t*t*t+1/120*L*L/I*I*(T1-T3)*(T1-T3)*t*t*t*t*t*t) / 2) - 0.5 * g * t * t
+        angle_v = angle_v0 + L / I * (T1 - T3) * t
+        angle = angle0 + angle_v0 * t + 0.5 * L / I * (T1 - T3) * t * t
+        vx = vx0 + 1/M * (T1 + T2 + T3) * (angle0 * t + 0.5 * angle_v0 * t * t + 1/6 * L / I * (T1 - T3) * t * t * t - 1 / 6 * (angle0*angle0*angle0 + angle_v0*angle_v0*angle_v0*t*t*t + 1/8*L*L*L/I/I/I*(T1-T3)*(T1-T3)*(T1-T3)*t*t*t*t*t*t + 3*angle0*angle0*angle_v0*t + 1.5*angle0*angle0*L/I*(T1-T3)*t*t + 3*angle0*angle_v0*angle_v0*t*t + 1.5*angle_v0*angle_v0*L/I*(T1-T3)*t*t*t*t + 0.75*angle0*L*L/I/I*(T1-T3)*(T1-T3)*t*t*t*t + 0.75*angle_v0*L*L/I/I*(T1-T3)*(T1-T3)*t*t*t*t*t + 3*angle0*angle_v0*L/I*(T1-T3)*t*t*t))
+        vz = vz0 + 1/M/2 * (T1 + T2 + T3) * (2*t - angle0 * angle0 * t - 1/3*angle_v0*angle_v0*t*t*t - 1/20*L*L/I/I*(T1-T3)*(T1-T3)*t*t*t*t*t - angle0 * angle_v0*t*t - 1/3*angle0*L/I*(T1-T3)*t*t*t-1/4*angle_v0*L/I*(T1-T3)*t*t*t*t) - g*t
+        x = x0 + vx0*t + 1/M * (T1 + T2 + T3) * (0.5 * angle0 * t * t + 1 / 6 * angle_v0 * t * t * t + 1 / 24 * L / I * (T1-T3) *t*t*t*t - 1 / 6 * (angle0*angle0*angle0*t + 0.25*angle_v0*angle_v0*angle_v0*t*t*t*t + 1/56*L*L*L/I/I/I*(T1-T3)*(T1-T3)*(T1-T3)*t*t*t*t*t*t*t+1.5*angle0*angle0*angle_v0*t*t+0.5*angle0*angle0*L/I*(T1-T3)*t*t*t+angle0*angle_v0*angle_v0*t*t*t+0.3*angle_v0*angle_v0*L/I*(T1-T3)*t*t*t*t*t+0.15*angle0*L*L/I/I*(T1-T3)*(T1-T3)*t*t*t*t*t+0.125*angle_v0*L*L/I/I*(T1-T3)*(T1-T3)*t*t*t*t*t*t + 0.75*angle0*angle_v0*L/I*(T1-T3)*t*t*t*t))
+        z = z0 + vz0*t + 1/M/2 * (T1 + T2 + T3) * (t*t - 0.5 * angle0*angle0*t*t - 1/12*angle_v0*angle_v0*t*t*t*t - 1/120*L*L/I/I*(T1-T3)*(T1-T3)*t*t*t*t*t*t - 1/3*angle0*angle_v0*t*t*t - 1/12*angle0*L/I*(T1-T3)*t*t*t*t-1/20*angle_v0*L/I*(T1-T3)*t*t*t*t*t) - 0.5 * g * t * t
 
         target = (x-x_target)*(x-x_target)+(z-z_target)*(z-z_target)
         target.backward(retain_graph=True)
@@ -60,7 +65,7 @@ def Rise(x0,z0,vx0,vz0,angle0,t0,target0):
         if not satisfyConstraints(x,z,vx,vz,t) or t < 0:
             print('not satisfied\n')
             t.data = torch.tensor(-1.0)
-            return x0,z0,vx0,vz0,angle0,T1,T2,T3,t,target0
+            return x0,z0,vx0,vz0,angle0,angle_v0,T1,T2,T3,t,target0
         
         if pre_value != -1 and temp + 0.0001 > pre_value:
             break
@@ -84,14 +89,15 @@ def Rise(x0,z0,vx0,vz0,angle0,t0,target0):
         vx_.data = vx.data
         vz_.data = vz.data
         angle_.data = angle.data
+        angle_v_.data = angle_v.data
     if target.item() < target0.item():
-        return x,z,vx,vz,angle,T1,T2,T3,t,target
+        return x,z,vx,vz,angle,angle_v,T1,T2,T3,t,target
     else:
         t.data = torch.tensor(-1.0)
-        return x0,z0,vx0,vz0,angle0,T1,T2,T3,t,target0
+        return x0,z0,vx0,vz0,angle0,angle_v0,T1,T2,T3,t,target0
 
 
-def Cruise(x0,z0,vx0,vz0,angle0,t0,target0):
+def Cruise(x0,z0,vx0,vz0,angle0,angle_v0,t0,target0):
     T1 = torch.tensor(0.0,requires_grad=True)
     ## range for T2 [0,16]
     T2 = torch.tensor(8.0,requires_grad=True)
@@ -104,6 +110,7 @@ def Cruise(x0,z0,vx0,vz0,angle0,t0,target0):
     vx_ = torch.tensor(vx0.item())
     vz_ = torch.tensor(vz0.item())
     angle_ = torch.tensor(angle0.item())
+    angle_v_ = torch.tensor(angle_v0.item())
 
     T1_ = torch.tensor(0.0)
     T2_ = torch.tensor(8.0)
@@ -112,11 +119,12 @@ def Cruise(x0,z0,vx0,vz0,angle0,t0,target0):
     pre_value = -1
 
     while True:
-        angle = angle0 + 0.5 * L / I * (T1 - T3) * t * t
-        vx = vx0 + 1/M * (T1 + T2 + T3) * (angle0 * t + 1/6 * L / I * (T1 - T3) * t * t * t)
-        vz = vz0 + 1/M * (T1 + T2 + T3) * (t - (angle0 * angle0 * t + 1/3*angle0*L/I*(T1-T3)*t*t*t+1/20*L*L/I*I*(T1-T3)*(T1-T3)*t*t*t*t*t) / 2) - g * t
-        x = x0 + vx0*t + 1/M * (T1 + T2 + T3) * (0.5 * angle0 * t * t + 1 / 24 * L / I * (T1-T3) *t*t*t*t)
-        z = z0 + vz0*t + 1/M * (T1 + T2 + T3) * (0.5 * t * t - (0.5 * angle0 * angle0 * t * t + 1/12 * angle0 * L/I * (T1-T3)*t*t*t*t+1/120*L*L/I*I*(T1-T3)*(T1-T3)*t*t*t*t*t*t) / 2) - 0.5 * g * t * t
+        angle_v = angle_v0 + L / I * (T1 - T3) * t
+        angle = angle0 + angle_v0 * t + 0.5 * L / I * (T1 - T3) * t * t
+        vx = vx0 + 1/M * (T1 + T2 + T3) * (angle0 * t + 0.5 * angle_v0 * t * t + 1/6 * L / I * (T1 - T3) * t * t * t - 1 / 6 * (angle0*angle0*angle0 + angle_v0*angle_v0*angle_v0*t*t*t + 1/8*L*L*L/I/I/I*(T1-T3)*(T1-T3)*(T1-T3)*t*t*t*t*t*t + 3*angle0*angle0*angle_v0*t + 1.5*angle0*angle0*L/I*(T1-T3)*t*t + 3*angle0*angle_v0*angle_v0*t*t + 1.5*angle_v0*angle_v0*L/I*(T1-T3)*t*t*t*t + 0.75*angle0*L*L/I/I*(T1-T3)*(T1-T3)*t*t*t*t + 0.75*angle_v0*L*L/I/I*(T1-T3)*(T1-T3)*t*t*t*t*t + 3*angle0*angle_v0*L/I*(T1-T3)*t*t*t))
+        vz = vz0 + 1/M/2 * (T1 + T2 + T3) * (2*t - angle0 * angle0 * t - 1/3*angle_v0*angle_v0*t*t*t - 1/20*L*L/I/I*(T1-T3)*(T1-T3)*t*t*t*t*t - angle0 * angle_v0*t*t - 1/3*angle0*L/I*(T1-T3)*t*t*t-1/4*angle_v0*L/I*(T1-T3)*t*t*t*t) - g*t
+        x = x0 + vx0*t + 1/M * (T1 + T2 + T3) * (0.5 * angle0 * t * t + 1 / 6 * angle_v0 * t * t * t + 1 / 24 * L / I * (T1-T3) *t*t*t*t - 1 / 6 * (angle0*angle0*angle0*t + 0.25*angle_v0*angle_v0*angle_v0*t*t*t*t + 1/56*L*L*L/I/I/I*(T1-T3)*(T1-T3)*(T1-T3)*t*t*t*t*t*t*t+1.5*angle0*angle0*angle_v0*t*t+0.5*angle0*angle0*L/I*(T1-T3)*t*t*t+angle0*angle_v0*angle_v0*t*t*t+0.3*angle_v0*angle_v0*L/I*(T1-T3)*t*t*t*t*t+0.15*angle0*L*L/I/I*(T1-T3)*(T1-T3)*t*t*t*t*t+0.125*angle_v0*L*L/I/I*(T1-T3)*(T1-T3)*t*t*t*t*t*t + 0.75*angle0*angle_v0*L/I*(T1-T3)*t*t*t*t))
+        z = z0 + vz0*t + 1/M/2 * (T1 + T2 + T3) * (t*t - 0.5 * angle0*angle0*t*t - 1/12*angle_v0*angle_v0*t*t*t*t - 1/120*L*L/I/I*(T1-T3)*(T1-T3)*t*t*t*t*t*t - 1/3*angle0*angle_v0*t*t*t - 1/12*angle0*L/I*(T1-T3)*t*t*t*t-1/20*angle_v0*L/I*(T1-T3)*t*t*t*t*t) - 0.5 * g * t * t
 
         target = (x-x_target)*(x-x_target)+(z-z_target)*(z-z_target)
         target.backward(retain_graph=True)
@@ -124,8 +132,11 @@ def Cruise(x0,z0,vx0,vz0,angle0,t0,target0):
 
         if not satisfyConstraints(x,z,vx,vz,t) or t < 0:
             print('not satisfied\n')
+            print('x : ' + str(x))
+            print('z : ' + str(z))
+            print('angle : ' + str(angle))
             t.data = torch.tensor(-1.0)
-            return x0,z0,vx0,vz0,angle0,T1,T2,T3,t,target0
+            return x0,z0,vx0,vz0,angle0,angle_v0,T1,T2,T3,t,target0
         
         if pre_value != -1 and temp + 0.0001 > pre_value:
             break
@@ -149,14 +160,15 @@ def Cruise(x0,z0,vx0,vz0,angle0,t0,target0):
         vx_.data = vx.data
         vz_.data = vz.data
         angle_.data = angle.data
+        angle_v_.data = angle_v.data
     if target.item() < target0.item():
-        return x,z,vx,vz,angle,T1,T2,T3,t,target
+        return x,z,vx,vz,angle,angle_v,T1,T2,T3,t,target
     else:
         t.data = torch.tensor(-1.0)
-        return x0,z0,vx0,vz0,angle0,T1,T2,T3,t,target0
+        return x0,z0,vx0,vz0,angle0,angle_v0,T1,T2,T3,t,target0
 
 
-def Dive(x0,z0,vx0,vz0,angle0,t0,target0):
+def Dive(x0,z0,vx0,vz0,angle0,angle_v0,t0,target0):
     ## range for T1 [0,2]
     T1 = torch.tensor(1.0,requires_grad=True)
     T2 = torch.tensor(M*g,requires_grad=True)
@@ -168,6 +180,7 @@ def Dive(x0,z0,vx0,vz0,angle0,t0,target0):
     vx_ = torch.tensor(vx0.item())
     vz_ = torch.tensor(vz0.item())
     angle_ = torch.tensor(angle0.item())
+    angle_v_ = torch.tensor(angle_v0.item())
 
     T1_ = torch.tensor(1.0)
     T2_ = torch.tensor(M*g)
@@ -176,11 +189,12 @@ def Dive(x0,z0,vx0,vz0,angle0,t0,target0):
     pre_value = -1
 
     while True:
-        angle = angle0 + 0.5 * L / I * (T1 - T3) * t * t
-        vx = vx0 + 1/M * (T1 + T2 + T3) * (angle0 * t + 1/6 * L / I * (T1 - T3) * t * t * t)
-        vz = vz0 + 1/M * (T1 + T2 + T3) * (t - (angle0 * angle0 * t + 1/3*angle0*L/I*(T1-T3)*t*t*t+1/20*L*L/I*I*(T1-T3)*(T1-T3)*t*t*t*t*t) / 2) - g * t
-        x = x0 + vx0*t + 1/M * (T1 + T2 + T3) * (0.5 * angle0 * t * t + 1 / 24 * L / I * (T1-T3) *t*t*t*t)
-        z = z0 + vz0*t + 1/M * (T1 + T2 + T3) * (0.5 * t * t - (0.5 * angle0 * angle0 * t * t + 1/12 * angle0 * L/I * (T1-T3)*t*t*t*t+1/120*L*L/I*I*(T1-T3)*(T1-T3)*t*t*t*t*t*t) / 2) - 0.5 * g * t * t
+        angle_v = angle_v0 + L / I * (T1 - T3) * t
+        angle = angle0 + angle_v0 * t + 0.5 * L / I * (T1 - T3) * t * t
+        vx = vx0 + 1/M * (T1 + T2 + T3) * (angle0 * t + 0.5 * angle_v0 * t * t + 1/6 * L / I * (T1 - T3) * t * t * t - 1 / 6 * (angle0*angle0*angle0 + angle_v0*angle_v0*angle_v0*t*t*t + 1/8*L*L*L/I/I/I*(T1-T3)*(T1-T3)*(T1-T3)*t*t*t*t*t*t + 3*angle0*angle0*angle_v0*t + 1.5*angle0*angle0*L/I*(T1-T3)*t*t + 3*angle0*angle_v0*angle_v0*t*t + 1.5*angle_v0*angle_v0*L/I*(T1-T3)*t*t*t*t + 0.75*angle0*L*L/I/I*(T1-T3)*(T1-T3)*t*t*t*t + 0.75*angle_v0*L*L/I/I*(T1-T3)*(T1-T3)*t*t*t*t*t + 3*angle0*angle_v0*L/I*(T1-T3)*t*t*t))
+        vz = vz0 + 1/M/2 * (T1 + T2 + T3) * (2*t - angle0 * angle0 * t - 1/3*angle_v0*angle_v0*t*t*t - 1/20*L*L/I/I*(T1-T3)*(T1-T3)*t*t*t*t*t - angle0 * angle_v0*t*t - 1/3*angle0*L/I*(T1-T3)*t*t*t-1/4*angle_v0*L/I*(T1-T3)*t*t*t*t) - g*t
+        x = x0 + vx0*t + 1/M * (T1 + T2 + T3) * (0.5 * angle0 * t * t + 1 / 6 * angle_v0 * t * t * t + 1 / 24 * L / I * (T1-T3) *t*t*t*t - 1 / 6 * (angle0*angle0*angle0*t + 0.25*angle_v0*angle_v0*angle_v0*t*t*t*t + 1/56*L*L*L/I/I/I*(T1-T3)*(T1-T3)*(T1-T3)*t*t*t*t*t*t*t+1.5*angle0*angle0*angle_v0*t*t+0.5*angle0*angle0*L/I*(T1-T3)*t*t*t+angle0*angle_v0*angle_v0*t*t*t+0.3*angle_v0*angle_v0*L/I*(T1-T3)*t*t*t*t*t+0.15*angle0*L*L/I/I*(T1-T3)*(T1-T3)*t*t*t*t*t+0.125*angle_v0*L*L/I/I*(T1-T3)*(T1-T3)*t*t*t*t*t*t + 0.75*angle0*angle_v0*L/I*(T1-T3)*t*t*t*t))
+        z = z0 + vz0*t + 1/M/2 * (T1 + T2 + T3) * (t*t - 0.5 * angle0*angle0*t*t - 1/12*angle_v0*angle_v0*t*t*t*t - 1/120*L*L/I/I*(T1-T3)*(T1-T3)*t*t*t*t*t*t - 1/3*angle0*angle_v0*t*t*t - 1/12*angle0*L/I*(T1-T3)*t*t*t*t-1/20*angle_v0*L/I*(T1-T3)*t*t*t*t*t) - 0.5 * g * t * t
 
         target = (x-x_target)*(x-x_target)+(z-z_target)*(z-z_target)
         target.backward(retain_graph=True)
@@ -188,7 +202,7 @@ def Dive(x0,z0,vx0,vz0,angle0,t0,target0):
 
         if not satisfyConstraints(x,z,vx,vz,t) or t < 0:
             t.data = torch.tensor(-1.0)
-            return x0,z0,vx0,vz0,angle0,T1,T2,T3,t,target0
+            return x0,z0,vx0,vz0,angle0,angle_v0,T1,T2,T3,t,target0
         
         if pre_value != -1 and temp + 0.0001 > pre_value:
             break
@@ -213,10 +227,10 @@ def Dive(x0,z0,vx0,vz0,angle0,t0,target0):
         vz_.data = vz.data
         angle_.data = angle.data
     if target.item() < target0.item():
-        return x,z,vx,vz,angle,T1,T2,T3,t,target
+        return x,z,vx,vz,angle,angle_v,T1,T2,T3,t,target
     else:
         t.data = torch.tensor(-1.0)
-        return x0,z0,vx0,vz0,angle0,T1,T2,T3,t,target0
+        return x0,z0,vx0,vz0,angle0,angle_v0,T1,T2,T3,t,target0
 
 def print_info(x,z,vx,vz,angle,T1,T2,T3,t):
     print('x: ' + str(x))
@@ -230,6 +244,7 @@ def print_info(x,z,vx,vz,angle,T1,T2,T3,t):
     print('t: ' + str(t))
 
 mode = 'Dive'
+mode_map = {'Cruise':'Dive','Dive':'Rise','Rise':'Cruise'}
 flag = True
 f = open('/home/cedricxing/Desktop/result.txt','w')
 time_start = time.time()
@@ -239,8 +254,8 @@ target = torch.tensor(10000000.0)
 while pow(x-x_target.item(),2) > 1:
     if mode == 'Cruise':
         print('Cruise:')
-        x,z,vx,vz,angle,T1,T2,T3,t,target = Cruise(x,z,vx,vz,angle,t,target)
-        mode = 'Rise'
+        x,z,vx,vz,angle,angle_v,T1,T2,T3,t,target = Cruise(x,z,vx,vz,angle,angle_v,t,target)
+        mode = mode_map[mode]
         if t.item() == -1:
             continue
         f.write('1,&%d&%f&%f&%f&%f&%f\n'%(t/0.01,T1,T2,T3,x,z))
@@ -248,8 +263,8 @@ while pow(x-x_target.item(),2) > 1:
 
     elif mode == 'Rise':
         print('Rise:')
-        x,z,vx,vz,angle,T1,T2,T3,t,target = Rise(x,z,vx,vz,angle,t,target)
-        mode = 'Dive'
+        x,z,vx,vz,angle,angle_v,T1,T2,T3,t,target = Rise(x,z,vx,vz,angle,angle_v,t,target)
+        mode = mode_map[mode]
         if t.item() == -1:
             continue
         f.write('2,&%d&%f&%f&%f&%f&%f\n'%(t/0.01,T1,T2,T3,x,z))
@@ -257,8 +272,8 @@ while pow(x-x_target.item(),2) > 1:
 
     elif mode == 'Dive':
         print('Dive:')
-        x,z,vx,vz,angle,T1,T2,T3,t,target = Dive(x,z,vx,vz,angle,t,target)
-        mode = 'Cruise'
+        x,z,vx,vz,angle,angle_v,T1,T2,T3,t,target = Dive(x,z,vx,vz,angle,angle_v,t,target)
+        mode = mode_map[mode]
         if t.item() == -1:
             continue
         f.write('3,&%d&%f&%f&%f&%f&%f\n'%(t/0.01,T1,T2,T3,x,z))
